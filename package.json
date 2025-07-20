@@ -1,0 +1,38 @@
+{
+  "name": "website-tester-universal",
+  "version": "1.0.0",
+  "description": "通用網站測試工具 - 支持 Node.js CLI、Cloudflare Workers 和 Pages 部署",
+  "main": "website-tester.js",
+  "bin": {
+    "website-tester": "./website-tester.js"
+  },
+  "scripts": {
+    "start": "node website-tester.js",
+    "test": "node test.js",
+    "install-global": "npm install -g .",
+    "uninstall-global": "npm uninstall -g website-tester-universal",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "preview": "wrangler dev --local",
+    "publish": "wrangler deploy --env production"
+  },
+  "keywords": [
+    "website-tester",
+    "node",
+    "cli",
+    "cloudflare",
+    "workers",
+    "pages",
+    "speed-test",
+    "connectivity-test",
+    "network-tools"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
